@@ -17,6 +17,8 @@ settings.meteorURL = 'ws://' + settings.meteorHost + '/websocket';
 settings.topic = {};
 settings.topic.visualdata = {};
 
+
+settings.topic.visualdata.alphaValue = 'alpha';
 settings.topic.visualdata.piValue = 'piValue';
 settings.topic.visualdata.percentage = 'percentage';
 settings.topic.visualdata.progress = 'progress';
