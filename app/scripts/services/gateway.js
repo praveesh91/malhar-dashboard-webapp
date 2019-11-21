@@ -26,6 +26,8 @@ angular.module('app.service')
               type: topicData.schema.type
             };
           });
+          
+          
 
           deferred.resolve(topics);
           //$rootScope.$apply();
@@ -73,6 +75,7 @@ angular.module('app.service')
           });
 
           topics = _.reject(topics, function (topic) {
+            return !appIdMap.hasOwnProperty(topic.appId);
             return !appIdMap.hasOwnProperty(topic.appId);
           });
 
